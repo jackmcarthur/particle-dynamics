@@ -17,7 +17,7 @@ This project is done in Python with some assistance from Cython, a superset of t
 If you have Cython installed, you can download and compile [particledynamics2D.pyx](particledynamics2D.pyx) by executing [setup.py](setup.py) in the command line using `python setup.py build_ext --inplace`. particledynamics2D will then become a normal python module, able to be imported by `import particledynamics2D` like any other.
 For an example of how to use or animate an instance of the Ensemble class, see [particledynamicstest.py](particledynamicstest.py), which was used to create the above gif.
 
-The two Jupyter notebooks in this repository can be used with no imports to generate the same results; one is for the 2D case and the other shows an extension of this module to 3D.
+The two Jupyter notebooks in this repository can be used with no imports to generate the same results; one is for the 2D case and the other shows an extension of this module to 3D. The 3D case shows the 3-dimensional crystallization of a set of positively and negatively charged ions, and over long simulation times, the particles will settle into real crystal habits such as body-centered cubic.
 
 ## Details and construction
 The module [particledynamics2D.pyx](particledynamics2D.pyx) contains a Particle class and an Ensemble class. The Ensemble class can be called in the following format:
