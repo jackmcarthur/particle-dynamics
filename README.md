@@ -2,9 +2,9 @@
 A small project showing the evolution of a system of gas particles as they cool to temperatures near 0 Kelvin. This model realistically accounts for electrostatic attractive and repulsive forces between atoms, allowing for "crystallization" behavior. 
 This project allows one to make animations like the following, which shows 400 particles with a clustering affinity, analagous to a real life situation of immiscible molecules like oil and water:
 
-![400 particle demo](https://github.com/jackmcarthur/particle-dynamics/blob/master/particle%20dynamics%20gif.gif)
+<img src="particle%20dynamics%20gif.gif" width="400">
 
-[Link to a 60 fps .MP4 file of the above gif.](https://imgur.com/gallery/CJI88sL)
+![Link to a 60 fps .MP4 file of the above gif.](https://imgur.com/gallery/CJI88sL)
 
 ## Cython details
 This project is done in Python with some assistance from Cython, a superset of the Python language that allows for static typing, C standard libraries, and other C features to be used in Python. It is used here because it can be immensely faster than Python, especially with computations involving looping over arrays. This function, which is used to update the velocities of an ensemble of particles once per frame by looping over the attractive and repulsive forces between every choice of two particles, is sped up by a factor of nearly 20x:
