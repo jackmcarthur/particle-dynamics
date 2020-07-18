@@ -4,7 +4,7 @@ This project allows one to make animations like the following, which shows 400 p
 
 <img src="particle%20dynamics%20gif.gif" width="400">
 
-![Link to a 60 fps .MP4 file of the above gif.](https://imgur.com/gallery/CJI88sL)
+<a href="https://i.imgur.com/lZdJoCI.mp4" target="\_blank">Link to a 60 fps .MP4 file of the above gif.</a>
 
 ## Cython details
 This project is done in Python with some assistance from Cython, a superset of the Python language that allows for static typing, C standard libraries, and other C features to be used in Python. It is used here because it can be immensely faster than Python, especially with computations involving looping over arrays. This function, which is used to update the velocities of an ensemble of particles once per frame by looping over the attractive and repulsive forces between every choice of two particles, is sped up by a factor of nearly 20x:
