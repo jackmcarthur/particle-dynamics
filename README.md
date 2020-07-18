@@ -9,7 +9,7 @@ This project allows one to make animations like the following, which shows 400 p
 ## Cython details
 This project is written in Python with some assistance from Cython, a superset of the Python language that allows for static typing, C standard libraries, and other C features to be used. It is used here because it can be immensely faster than Python, especially with computations involving looping over arrays. This function, which is used to update the velocities of an ensemble of particles once per frame by looping over the attractive and repulsive forces between every choice of two particles, is sped up by a factor of nearly 20x:
 
-```
+```Python
 %timeit Ensemble(100, 100, 0., 3., 0., 3.)._velocity_update()
 # native python: 78.4 ms ± 1.47 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 # cython: 4.32 ms ± 109 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
